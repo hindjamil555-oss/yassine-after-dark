@@ -1,0 +1,309 @@
+```css
+/* ================================
+   YASSINE AFTER DARK
+   BLACK & RED DARK AESTHETIC
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #f5eeee;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+header {
+    background: #100b0d;
+    padding: 20px;
+    border-bottom: 1px solid #54202b;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff526d;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: Georgia, serif;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #e8dada;
+}
+
+/* HOME / HERO */
+
+#home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        180deg,
+        #080808,
+        #210b12,
+        #080808
+    );
+}
+
+#home h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    letter-spacing: 5px;
+    color: #f0dddd;
+    text-shadow: 0 0 25px #8b1d35;
+}
+
+#home p {
+    margin-top: 15px;
+    color: #c94b60;
+    letter-spacing: 3px;
+}
+
+/* ABOUT */
+
+#about {
+    background: #0e0b0c;
+}
+
+#about p {
+    max-width: 650px;
+    margin: 15px auto;
+    color: #bbb;
+}
+
+/* MUSIC SECTION */
+
+#music {
+    padding: 80px 20px;
+    background: linear-gradient(
+        180deg,
+        #090909,
+        #18090d,
+        #080808
+    );
+    color: #f5eeee;
+}
+
+.music-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.music-label {
+    color: #b52b40;
+    letter-spacing: 5px;
+    font-size: 11px;
+}
+
+.music-header h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    letter-spacing: 4px;
+    color: #e8dada;
+    text-shadow: 0 0 20px #6e1425;
+}
+
+.song-count {
+    color: #b52b40;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.playlist-card {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(20, 12, 14, 0.9);
+    border: 1px solid #54202b;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(120, 0, 25, 0.15);
+}
+
+.playlist-card h3 {
+    color: #c94b60;
+    letter-spacing: 3px;
+}
+
+.playlist-description {
+    color: #aaa;
+    font-style: italic;
+}
+
+.track-list {
+    padding-left: 25px;
+    text-align: left;
+}
+
+.track-list li {
+    padding: 12px 8px;
+    border-bottom: 1px solid #302024;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.track-list li:hover {
+    color: #ff637c;
+    background: rgba(160, 20, 45, 0.12);
+    padding-left: 16px;
+}
+
+/* MUSIC UPLOAD */
+
+.music-upload {
+    margin-top: 45px;
+    padding: 25px;
+    text-align: center;
+    background: #100b0d;
+    border: 1px solid #54202b;
+    border-radius: 12px;
+}
+
+.music-upload p {
+    color: #aaa;
+}
+
+.music-upload input {
+    margin: 15px 0;
+    max-width: 100%;
+}
+
+.music-upload audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* FAVORITES */
+
+#favorites {
+    background: #0e0b0c;
+}
+
+#favorites p {
+    color: #bbb;
+    margin: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #100b0d;
+    color: #a88d93;
+    border-top: 1px solid #54202b;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* RESPONSIVE - TABLET & PHONE */
+
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .music-header h2 {
+        font-size: 27px;
+    }
+
+    .playlist-card {
+        padding: 18px;
+    }
+
+    .track-list li {
+        font-size: 13px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+}
+```
+```css
+/* MUSIC PLAYER CONTROLS */
+
+#nowPlaying {
+    color: #e8b9c1;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.music-controls button {
+    background: #1b0b10;
+    color: #f5eeee;
+    border: 1px solid #9b3048;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.music-controls button:hover {
+    background: #8b1d35;
+    box-shadow: 0 0 15px #8b1d35;
+    transform: scale(1.05);
+}
+
+#playPauseBtn {
+    background: #8b1d35;
+    font-weight: bold;
+}
+```

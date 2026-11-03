@@ -1,0 +1,10 @@
+{
+  "name": "YASSINE AFTER DARK",
+  "short_name": "YASSINE",
+  "description": "Dark vibes outside. Pure heart inside.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#100b0d",
+  "orientation": "any"
+}
